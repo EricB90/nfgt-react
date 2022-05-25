@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>NFGT - Inventory</title>
+</head>
+<body>
+    <!-- open header -->
+    <header class="header" id="header">
+        <div class="offcanvas offcanvas-end sign-up" tabindex="-1" id="signUp" aria-labelledby="signUpLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title sign-up-title" id="signUpLabel">Sign Up</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="" method="get" class="sign-up-form">
+                    <label for="name" class="d-block">Full Name:</label>
+                    <input type="text" name="name" class="d-block" id="name" required>
+                    <label for="username" class="d-block">Username:</label>
+                    <input type="text" name="username" class="d-block" id="username" required>
+                    <label for="email" class="d-block">Email:</label>
+                    <input type="email" name="email" class="d-block" id="username" required>
+                    <label for="password" class="d-block">Password:</label>
+                    <input type="password" name="password" class="d-block" id="password" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" name="confirmPassword" class="d-block" id="confirmPassword" required>
+                    <input type="submit" class="sign-up-submit">
+                </form>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end sign-in" tabindex="-1" id="signIn" aria-labelledby="signInLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title sign-in-title" id="signUpLabel">Sign In</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="" method="get" class="sign-in-form">
+                    <label for="username" class="d-block">Username:</label>
+                    <input type="text" name="username" class="d-block" id="username" required>
+                    <label for="password" class="d-block">Password:</label>
+                    <input type="password" name="password" class="d-block" id="password" required>
+                    <input type="submit" class="sign-in-submit" value="Sign In">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="banner-div">
+                <img src="media/banner.jpg" alt="NFGT Banner" class="img-fluid banner-img d-none d-md-block">
+                <img src="media/banner-mobile.jpg" alt="NFGT Banner" class="img-fluid banner-img d-md-none">
+                <h1 class="home-h1 text-center">nfgt</h1>
+                <p class="home-subheader text-center">non-fungible gacha tokens</p>
+                <p class="home-subheader text-center">New user? <a href="#signUp" data-bs-toggle="offcanvas" aria-controls="signUp">Sign up here</a>. Already registered? <a href="#signIn" data-bs-toggle="offcanvas" aria-controls="signIn">Sign in here</a>.</p>
+                <p class="home-subheader user-tag"><span class="username-tag">username</span> - <span class="balance-tag">balance</span></p>
+            </div>
+            <ul class="nav nav-justified top-nav">
+                <li class="nav-item top-nav-item">
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                    <a href="about.html" class="nav-link">about</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                    <a href="inventory.html" class="nav-link selected-page">gacha</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- close header -->
+    <!-- open main -->
+    <main class="main" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="https://via.placeholder.com/2000x2000" alt="A placeholder image" class="img-fluid inventory-img">
+                </div>
+            </div>
+            <div class="gacha-div">
+                <h2 class="gacha-subheader text-center">Ready to purchase your own NFGTs?</h2>
+                
+            </div>
+        </div>
+    </main>
+    <!-- close main -->
+    <!-- open footer -->
+    <footer class="footer" id="footer">
+        <p class="colophon text-center">site by mil4dev &copy; 2022 &middot; all rights reserved</p>
+        <p class="top-link text-center"><a href="#top">back to top</a></p>
+    </footer>
+    <!-- close footer -->
+    <!-- open script-block -->
+    <div class="script-block">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </div>
+    <!-- close script-block -->
+    <!-- open svg-block -->
+    <div class="svg-block"></div>
+    <!-- close svg-block -->
+</body>
+</html>
